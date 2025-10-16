@@ -14,7 +14,6 @@ from src.calculator import add, subtract, multiply, divide, power, square_root
 @click.argument("num2", type=float, required=False)
 def calculate(operation, num1, num2=None):
     """Simple calculator CLI"""
-
     try:
         if operation == "add":
             result = add(num1, num2)
@@ -41,10 +40,10 @@ def calculate(operation, num1, num2=None):
     except ValueError as e:
         click.echo(f"Error: {e}")
         sys.exit(1)
-    except Exception as e:
+    except Exception as e:  # pylint: disable=broad-exception-caught
         click.echo(f"Unexpected error: {e}")
         sys.exit(1)
 
 
 if __name__ == "__main__":
-    calculate()
+    calculate()  # pylint: disable=no-value-for-parameter
