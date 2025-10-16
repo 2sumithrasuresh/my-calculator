@@ -7,7 +7,6 @@ import pytest
 from src.calculator import add, divide, subtract, multiply, square_root, power
 
 
-
 class TestBasicOperations:
     """Test basic arithmetic operations"""
 
@@ -21,11 +20,10 @@ class TestBasicOperations:
         assert subtract(5, 3) == 2
         assert subtract(10, 4) == 6
 
-<<<<<<< HEAD
 
 class TestMultiplyDivideWithValidation:
     """Test multiplication and division with input validation."""
-=======
+
     def test_add_negative_numbers(self):
         """Test adding negative numbers"""
         assert add(-1, -1) == -2
@@ -40,7 +38,6 @@ class TestMultiplyDivideWithValidation:
 class TestMultiplyDivideWithValidation:
     """Test multiplication and division with
     input validation."""
->>>>>>> 56a480af1c4f8a0fdf6c405a8067eb82d0040fce
 
     def test_multiply_input_validation(self):
         """Test multiply rejects non-numeric
@@ -86,14 +83,12 @@ class TestMultiplyDivide:
         assert divide(15, 3) == 5
 
     def test_divide_by_zero_raises_error(self):
-<<<<<<< HEAD
         """Test that dividing by zero raises ValueError"""
         import pytest
 
-=======
         """Test that dividing by zero raises
         ValueError"""
->>>>>>> 56a480af1c4f8a0fdf6c405a8067eb82d0040fce
+
         with pytest.raises(ValueError, match="Cannot divide by zero"):
             divide(10, 0)
 
