@@ -1,0 +1,8 @@
+************* Module src.calculator
+src/calculator.py:18:0: C0303: Trailing whitespace (trailing-whitespace)
+src/calculator.py:30:0: C0303: Trailing whitespace (trailing-whitespace)
+src/calculator.py:36:1: W0511: TODO: Students will add multiply, divide, power, sqrt functions (fixme)
+
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.75/10, +0.00)
+
