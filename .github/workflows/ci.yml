@@ -133,7 +133,7 @@ jobs:
           awk -v s="$score" 'BEGIN{ if (s+0 < 7.0) exit 1 }' || (echo "Pylint score $score is below threshold 7.0" && exit 1)
 
       - name: Upload lint report
-        ses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: lint-report
           path: lint_report.txt
