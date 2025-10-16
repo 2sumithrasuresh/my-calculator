@@ -1,8 +1,13 @@
+************* Module src.cli
+src/cli.py:49:0: C0305: Trailing newlines (trailing-newlines)
+src/cli.py:8:0: E0401: Unable to import 'calculator' (import-error)
+src/cli.py:43:11: W0718: Catching too general exception Exception (broad-exception-caught)
+src/cli.py:48:4: E1120: No value for argument 'operation' in function call (no-value-for-parameter)
+src/cli.py:48:4: E1120: No value for argument 'num1' in function call (no-value-for-parameter)
 ************* Module src.calculator
-src/calculator.py:18:0: C0303: Trailing whitespace (trailing-whitespace)
-src/calculator.py:30:0: C0303: Trailing whitespace (trailing-whitespace)
-src/calculator.py:36:1: W0511: TODO: Students will add multiply, divide, power, sqrt functions (fixme)
+src/calculator.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/calculator.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.75/10 (previous run: 8.75/10, +0.00)
+Your code has been rated at 6.55/10 (previous run: 6.55/10, +0.00)
 
