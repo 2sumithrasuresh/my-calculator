@@ -41,6 +41,18 @@ def square_root(a):
         raise ValueError("Cannot calculate square root of negative")
     return math.sqrt(a)
 
+<<<<<<< HEAD
+=======
+def power(a, b):
+    """Raise a to the power of b"""
+    return a ** b
+def square_root(a):
+    """Calculate square root of a"""
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return a ** 0.5
+# TODO: Students will add multiply, divide, power, sqrt functions
+>>>>>>> 56a480af1c4f8a0fdf6c405a8067eb82d0040fce
 
 if __name__ == "__main__":
     print("🧮 Calculator Module")
